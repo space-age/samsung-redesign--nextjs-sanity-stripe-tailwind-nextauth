@@ -42,7 +42,7 @@ function Product({ product }: Props) {
 
         <div
           className="flex h-16 w-16 flex-shrink-0 cursor-pointer items-center
-           justify-center rounded-full bg-gradient-to-r from-pink-500 to-violet-500
+           justify-center rounded-full bg-gradient-to-r from-[#1528a0] to-[#9775fa]
             md:h-[70px] md:w-[70px]"
           onClick={addItemToBasket}
         >

@@ -65,9 +65,9 @@ function checkout() {
   };
 
   return (
-    <div className="min-h-screen overflow-hidden bg-[#E7ECEE]">
+    <div className="min-h-screen overflow-hidden bg-[#f8f9fa]">
       <Head>
-        <title>Bag - Apple</title>
+        <title>Bag - Samsung</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
@@ -132,19 +132,19 @@ function checkout() {
                   How would you like to check out?
                 </h4>
                 <div className="flex flex-col gap-4 md:flex-row">
-                  {/* Container for checkout option with apple card */}
+                  {/* Container for checkout option with samsung card */}
                   <div
                     className="order-2 flex flex-1 flex-col items-center rounded-xl
                    bg-gray-200 p-8 py-12 text-center"
                   >
                     <h4 className="mb-4 flex flex-col text-xl font-semibold">
                       <span>Pay Monthly</span>
-                      <span>with Apple Card</span>
+                      <span>with Samsung Card</span>
                       <span>
                         $283.16/mo. at 0% APR<sup className="-top-1">◊</sup>
                       </span>
                     </h4>
-                    <Button title="Check Out with Apple Card Monthly Installments" />
+                    <Button title="Check Out with Samsung Card Monthly Installments" />
                     <p className="mt-2 max-w-[240px] text-[13px]">
                       $0.00 due today, which includes applicable full-price
                       items, down payments, shipping, and taxes.

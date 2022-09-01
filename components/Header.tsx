@@ -15,12 +15,12 @@ function Header() {
   const items = useSelector(selectBasketItems);
 
   return (
-    <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-[#E7ECEE] p-4">
+    <header className="sticky top-0 z-30 flex w-full items-center justify-between bg-[#f8f9fa] p-4">
       <div className="flex items-center justify-center md:w-1/5">
         <Link href="/">
-          <div className="relative h-10 w-5 cursor-pointer opacity-75 transition hover:opacity-100">
+          <div className="relative h-10 w-40 cursor-pointer opacity-75 transition hover:opacity-100">
             <Image
-              src="https://rb.gy/vsvv2o"
+              src="https://rb.gy/m8mnlu"
               layout="fill"
               objectFit="contain"
             />
@@ -28,10 +28,10 @@ function Header() {
         </Link>
       </div>
       <div className="hidden flex-1 items-center justify-center space-x-8 md:flex">
-        <a className="headerLink">Product</a>
+        <a className="headerLink">Mobile</a>
+        <a className="headerLink">Displays</a>
+        <a className="headerLink">Offers</a>
         <a className="headerLink">Explore</a>
-        <a className="headerLink">Support</a>
-        <a className="headerLink">Business</a>
       </div>
       <div className="flex items-center justify-center gap-x-4 md:w-1/5">
         <SearchIcon className="headerIcon" />

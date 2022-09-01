@@ -49,6 +49,7 @@ function CheckoutProduct({ id, items }: Props) {
         </div>
         <div className="flex flex-col items-end space-y-4">
           <h4 className="text-xl font-semibold lg:text-2xl">
+            ${items.reduce((total, item) => total + item.price, 0)}
             {/* <Currency
               quantity={items.reduce((total, item) => total + item.price, 0)}
               currency="USD"

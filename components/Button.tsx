@@ -13,7 +13,7 @@ function Button({ title, onClick, width, loading, padding, noIcon }: Props) {
       className={`ease group relative z-30 box-border inline-flex ${
         width ? width : "w-auto"
       } ${padding} cursor-pointer items-center justify-center overflow-hidden rounded
-       bg-indigo-600 bg-gradient-to-r from-pink-500 to-violet-500 px-8 py-3
+       bg-indigo-600 bg-gradient-to-r from-[#1528a0] to-[#9775fa] px-8 py-3
         font-bold text-white transition-all duration-300 focus:outline-none`}
       onClick={onClick}
     >
