@@ -5,10 +5,9 @@ import Basket from "../components/Basket";
 import Header from "../components/Header";
 import Landing from "../components/Landing";
 import Product from "../components/Product";
-import { fetchCategories } from "../utils/fetchCategories";
-import { fetchProducts } from "../utils/fetchProducts";
 import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
+import { fetchProducts } from "../utils/fetchProducts";
 
 interface Props {
   categories: Category[];
@@ -18,7 +17,8 @@ interface Props {
 
 const Home = ({ categories, products }: Props) => {
   console.log(products);
-
+  console.log("test");
+  console.log("test");
   const showProducts = (category: number) => {
     return products
       .filter((product) => product.category._ref === categories[category]._id)
