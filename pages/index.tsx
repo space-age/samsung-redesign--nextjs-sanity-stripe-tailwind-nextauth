@@ -7,6 +7,7 @@ import Landing from "../components/Landing";
 import Product from "../components/Product";
 import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
+import { fetchCategories } from "../utils/fetchCategories";
 import { fetchProducts } from "../utils/fetchProducts";
 
 interface Props {
@@ -17,8 +18,7 @@ interface Props {
 
 const Home = ({ categories, products }: Props) => {
   console.log(products);
-  console.log("test");
-  console.log("test");
+
   const showProducts = (category: number) => {
     return products
       .filter((product) => product.category._ref === categories[category]._id)
