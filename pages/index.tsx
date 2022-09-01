@@ -8,7 +8,7 @@ import Product from "../components/Product";
 import { getSession } from "next-auth/react";
 import type { Session } from "next-auth";
 import { fetchCategories } from "../utils/fetchCategories";
-import { fetchProducts } from "../utils/fetchProducts";
+import { fetchProducts } from "../utils/fetch-products";
 
 interface Props {
   categories: Category[];
