@@ -2,6 +2,11 @@
 module.exports = {
   reactStrictMode: true,
   images: {
-    domains: ["rb.gy", "cdn.sanity.io", "lh3.googleusercontent.com"],
+    domains: [
+      "rb.gy",
+      "cdn.sanity.io",
+      "lh3.googleusercontent.com",
+      "img.icons8.com",
+    ],
   },
 };

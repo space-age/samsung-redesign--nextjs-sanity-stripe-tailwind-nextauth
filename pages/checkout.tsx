@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import { ChevronDownIcon } from "@heroicons/react/solid";
 import { useRouter } from "next/router";
 import { useEffect, useState } from "react";
-// import Currency from "react-currency-formatter";
+import Currency from "react-currency-formatter";
 import { useSelector } from "react-redux";
 import Stripe from "stripe";
 import Button from "../components/Button";
@@ -97,8 +97,8 @@ function checkout() {
                   <div className="flex justify-between">
                     <p>Subtotal</p>
                     <p>
-                      ${basketTotal}
-                      {/* <Currency quantity={basketTotal} currency="USD" /> */}
+                      {/* ${basketTotal} */}
+                      <Currency quantity={basketTotal} currency="USD" />
                     </p>
                   </div>
                   <div className="flex justify-between">
@@ -120,8 +120,8 @@ function checkout() {
                 <div className="flex justify-between pt-4 text-xl font-semibold">
                   <h4>Total</h4>
                   <h4>
-                    ${basketTotal}
-                    {/* <Currency quantity={basketTotal} currency="USD" /> */}
+                    {/* ${basketTotal} */}
+                    <Currency quantity={basketTotal} currency="USD" />
                   </h4>
                 </div>
               </div>
@@ -159,8 +159,8 @@ function checkout() {
                     <h4 className="mb-4 flex flex-col text-xl font-semibold">
                       Pay in full
                       <span>
-                        ${basketTotal}
-                        {/* <Currency quantity={basketTotal} currency="USD" /> */}
+                        {/* ${basketTotal} */}
+                        <Currency quantity={basketTotal} currency="USD" />
                       </span>
                     </h4>
 
